@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.otf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DBXProfileImagesTableViewCell" rowHeight="95" id="qvK-K0-kly" customClass="DBXProfileImagesTableViewCell" customModule="DoctorSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qvK-K0-kly" id="Hnr-X0-TJK">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="94.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqd-FM-A8u">
+                        <rect key="frame" x="10" y="10" width="268" height="18"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                        <color key="textColor" red="0.73725490199999999" green="0.73725490199999999" blue="0.73725490199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Ock-xr-Vr5">
+                        <rect key="frame" x="10" y="33" width="300" height="56"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="56" id="6VK-JI-Jde"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="0.0" id="LL7-xp-uYd">
+                            <size key="itemSize" width="60" height="60"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="-1" id="4vp-pf-Os3"/>
+                            <outlet property="delegate" destination="-1" id="uOb-PM-Qce"/>
+                        </connections>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcg-Pz-wt2">
+                        <rect key="frame" x="0.0" y="93" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.72156862749999995" green="0.72156862749999995" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Mhc-um-Aji"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vi9-Wr-ADJ">
+                        <rect key="frame" x="280" y="5" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="RLu-nr-Uty"/>
+                            <constraint firstAttribute="height" constant="30" id="xIl-0H-SYE"/>
+                        </constraints>
+                        <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <connections>
+                            <action selector="cameraButtonAction:" destination="qvK-K0-kly" eventType="touchUpInside" id="Qb5-ek-V6O"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Vi9-Wr-ADJ" firstAttribute="top" secondItem="Hnr-X0-TJK" secondAttribute="top" constant="5" id="AtQ-W7-Tny"/>
+                    <constraint firstAttribute="bottom" secondItem="Ock-xr-Vr5" secondAttribute="bottom" constant="5" id="DIh-fn-RBy"/>
+                    <constraint firstAttribute="trailing" secondItem="mcg-Pz-wt2" secondAttribute="trailing" id="L5v-Kf-i0x"/>
+                    <constraint firstAttribute="bottom" secondItem="mcg-Pz-wt2" secondAttribute="bottom" id="LEv-7F-XFR"/>
+                    <constraint firstAttribute="trailing" secondItem="Ock-xr-Vr5" secondAttribute="trailing" constant="10" id="PgH-Vf-5eM"/>
+                    <constraint firstItem="mcg-Pz-wt2" firstAttribute="top" secondItem="Ock-xr-Vr5" secondAttribute="bottom" constant="4" id="RnE-vc-mQr"/>
+                    <constraint firstItem="Ock-xr-Vr5" firstAttribute="top" secondItem="Xqd-FM-A8u" secondAttribute="bottom" constant="5" id="SMO-Hl-6NP"/>
+                    <constraint firstItem="Vi9-Wr-ADJ" firstAttribute="leading" secondItem="Xqd-FM-A8u" secondAttribute="trailing" constant="2" id="Ubw-yj-yXZ"/>
+                    <constraint firstItem="Xqd-FM-A8u" firstAttribute="top" secondItem="Hnr-X0-TJK" secondAttribute="top" constant="10" id="Vr3-eG-EYK"/>
+                    <constraint firstItem="Xqd-FM-A8u" firstAttribute="leading" secondItem="Hnr-X0-TJK" secondAttribute="leading" constant="10" id="YDA-Ob-bKp"/>
+                    <constraint firstItem="Ock-xr-Vr5" firstAttribute="leading" secondItem="Hnr-X0-TJK" secondAttribute="leading" constant="10" id="nGw-Ps-Qen"/>
+                    <constraint firstAttribute="trailing" secondItem="Vi9-Wr-ADJ" secondAttribute="trailing" constant="10" id="pbl-SL-dJ4"/>
+                    <constraint firstItem="mcg-Pz-wt2" firstAttribute="leading" secondItem="Hnr-X0-TJK" secondAttribute="leading" id="s7Q-Zq-uls"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionVie" destination="Ock-xr-Vr5" id="1Zv-RC-L9P"/>
+            </connections>
+            <point key="canvasLocation" x="442" y="287.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.otf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DBXContactNoTypeCell" id="qNR-i5-gxP" customClass="DBXContactNoTypeCell" customModule="DoctorSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qNR-i5-gxP" id="tcB-6f-kb7">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEh-bW-dWh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contact No" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bcv-EX-mSN">
+                                <rect key="frame" x="10" y="0.0" width="267" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eBj-G6-YFe"/>
+                                </constraints>
+                                <color key="textColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRE-Wg-jhU">
+                                <rect key="frame" x="285" y="7" width="25" height="25"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="B6e-tP-g5H"/>
+                                    <constraint firstAttribute="height" constant="25" id="MG2-bF-efi"/>
+                                </constraints>
+                                <color key="tintColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bcv-EX-mSN" firstAttribute="top" secondItem="LEh-bW-dWh" secondAttribute="top" id="JGR-Df-mdH"/>
+                            <constraint firstItem="TRE-Wg-jhU" firstAttribute="top" secondItem="LEh-bW-dWh" secondAttribute="top" constant="7" id="ZHm-Lt-6nE"/>
+                            <constraint firstAttribute="trailing" secondItem="TRE-Wg-jhU" secondAttribute="trailing" constant="10" id="oKv-Iv-UoF"/>
+                            <constraint firstItem="bcv-EX-mSN" firstAttribute="leading" secondItem="LEh-bW-dWh" secondAttribute="leading" constant="10" id="t7E-zE-DEC"/>
+                            <constraint firstItem="TRE-Wg-jhU" firstAttribute="leading" secondItem="bcv-EX-mSN" secondAttribute="trailing" constant="8" id="wjM-XM-oEM"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v8L-Kq-LVg" userLabel="SeperatorView">
+                        <rect key="frame" x="0.0" y="44" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="eOh-bc-7pb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="LEh-bW-dWh" secondAttribute="bottom" constant="5" id="5lh-5W-AuY"/>
+                    <constraint firstItem="LEh-bW-dWh" firstAttribute="top" secondItem="tcB-6f-kb7" secondAttribute="top" id="JTw-SG-uQV"/>
+                    <constraint firstItem="v8L-Kq-LVg" firstAttribute="leading" secondItem="tcB-6f-kb7" secondAttribute="leading" id="S8T-IX-gYT"/>
+                    <constraint firstItem="v8L-Kq-LVg" firstAttribute="top" secondItem="LEh-bW-dWh" secondAttribute="bottom" id="hxh-Hu-61S"/>
+                    <constraint firstItem="LEh-bW-dWh" firstAttribute="leading" secondItem="tcB-6f-kb7" secondAttribute="leading" id="rn1-Pw-uUG"/>
+                    <constraint firstAttribute="trailing" secondItem="LEh-bW-dWh" secondAttribute="trailing" id="tzr-m4-aJY"/>
+                    <constraint firstAttribute="trailing" secondItem="v8L-Kq-LVg" secondAttribute="trailing" id="yOb-Bv-73X"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="245" y="334"/>
+        </tableViewCell>
+    </objects>
+</document>

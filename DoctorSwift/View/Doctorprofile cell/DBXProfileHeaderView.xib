@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DBXProfileHeaderView" customModule="DoctorSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_img_holder" translatesAutoresizingMaskIntoConstraints="NO" id="wjm-zh-dli">
+                    <rect key="frame" x="230" y="5" width="140" height="140"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="Alk-hX-UhZ"/>
+                        <constraint firstAttribute="width" secondItem="wjm-zh-dli" secondAttribute="height" multiplier="1:1" id="C29-NB-E53"/>
+                        <constraint firstAttribute="height" constant="140" id="IkX-oh-Spk"/>
+                    </constraints>
+                </imageView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="ria-96-ZXq">
+                    <rect key="frame" x="290" y="65" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="fvS-Ej-fDm"/>
+                        <constraint firstAttribute="height" constant="20" id="vwA-ET-dSk"/>
+                    </constraints>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wjm-zh-dli" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3OD-eH-JN5"/>
+                <constraint firstItem="wjm-zh-dli" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9gD-13-Hgc"/>
+                <constraint firstItem="ria-96-ZXq" firstAttribute="centerX" secondItem="wjm-zh-dli" secondAttribute="centerX" id="m6Y-Y3-UWK"/>
+                <constraint firstItem="ria-96-ZXq" firstAttribute="centerY" secondItem="wjm-zh-dli" secondAttribute="centerY" id="m8h-qK-biG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="clinicNameButton" destination="t56-x9-0zp" id="8AO-JL-Oa9"/>
+                <outlet property="editButton" destination="JJh-fz-vVl" id="T0P-tm-GTn"/>
+                <outlet property="profileImageView" destination="wjm-zh-dli" id="XBX-bc-LOx"/>
+            </connections>
+        </view>
+        <view contentMode="scaleToFill" restorationIdentifier="DBXProfileHeaderView" id="Bro-yg-XEo" customClass="DBXProfileHeaderView" customModule="DoctorSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJh-fz-vVl">
+                    <rect key="frame" x="530" y="0.0" width="60" height="50"/>
+                    <color key="backgroundColor" red="0.13725490200000001" green="0.63921568630000003" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="X33-Bw-8gx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                    <state key="normal" title="EDIT"/>
+                    <connections>
+                        <action selector="editButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="gOe-3i-LY9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t56-x9-0zp">
+                    <rect key="frame" x="10" y="0.0" width="510" height="50"/>
+                    <color key="backgroundColor" red="0.13725490200000001" green="0.63921568630000003" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                    <state key="normal" title="clinic Name"/>
+                    <connections>
+                        <action selector="expandActionButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="at1-T8-FIx"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTe-2f-x0K">
+                    <rect key="frame" x="0.0" y="49" width="600" height="1"/>
+                    <color key="backgroundColor" red="0.73725490199999999" green="0.73725490199999999" blue="0.73725490199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="vlG-lx-GKH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.13725490200000001" green="0.63921568630000003" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="JJh-fz-vVl" secondAttribute="trailing" constant="10" id="Dyj-yA-MsC"/>
+                <constraint firstAttribute="bottom" secondItem="t56-x9-0zp" secondAttribute="bottom" id="E1L-Cs-vZf"/>
+                <constraint firstAttribute="trailing" secondItem="KTe-2f-x0K" secondAttribute="trailing" id="G2y-LW-meW"/>
+                <constraint firstItem="t56-x9-0zp" firstAttribute="top" secondItem="Bro-yg-XEo" secondAttribute="top" id="GQP-8X-qys"/>
+                <constraint firstAttribute="bottom" secondItem="JJh-fz-vVl" secondAttribute="bottom" id="IKr-mK-4PG"/>
+                <constraint firstItem="JJh-fz-vVl" firstAttribute="top" secondItem="Bro-yg-XEo" secondAttribute="top" id="RmB-GQ-v4A"/>
+                <constraint firstItem="JJh-fz-vVl" firstAttribute="leading" secondItem="t56-x9-0zp" secondAttribute="trailing" constant="10" id="Vjj-gZ-vQP"/>
+                <constraint firstItem="t56-x9-0zp" firstAttribute="leading" secondItem="Bro-yg-XEo" secondAttribute="leading" constant="10" id="qsB-Rd-Jss"/>
+                <constraint firstItem="KTe-2f-x0K" firstAttribute="leading" secondItem="Bro-yg-XEo" secondAttribute="leading" id="rbj-Fg-JfS"/>
+                <constraint firstAttribute="bottom" secondItem="KTe-2f-x0K" secondAttribute="bottom" id="vTC-Mv-ARy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="416" y="477"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="profile_img_holder" width="88" height="88"/>
+    </resources>
+</document>

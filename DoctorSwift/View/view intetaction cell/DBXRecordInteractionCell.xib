@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.otf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DBXRecordInteractionCell" id="KGk-i7-Jjw" customClass="DBXRecordInteractionCell" customModule="DoctorSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="129.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQs-Tg-nDI">
+                        <rect key="frame" x="0.0" y="20" width="320" height="90"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mva-m7-1o2">
+                                <rect key="frame" x="171" y="9" width="100" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="HDv-0H-aAN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                                <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="titleEdgeInsets" minX="-130" minY="20" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Add Form" image="new_prescription_icon">
+                                    <color key="titleColor" red="0.13725490200000001" green="0.63921568630000003" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="_titleLabel.numberOfLines">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OlX-e0-sJt">
+                                <rect key="frame" x="49" y="9" width="100" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="VUh-jb-zU1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                                <color key="tintColor" red="0.1333333333" green="0.56459657490000004" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="titleEdgeInsets" minX="-130" minY="20" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" image="new_prescription_icon_withoutPlus">
+                                    <color key="titleColor" red="0.13725490200000001" green="0.63921568630000003" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iai-3E-pJU">
+                                <rect key="frame" x="159" y="0.0" width="2" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="2" id="j10-bu-eBm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="OlX-e0-sJt" secondAttribute="bottom" constant="9" id="4kd-Fu-ddd"/>
+                            <constraint firstItem="Mva-m7-1o2" firstAttribute="leading" secondItem="iai-3E-pJU" secondAttribute="trailing" constant="10" id="OkH-Zc-DJe"/>
+                            <constraint firstItem="iai-3E-pJU" firstAttribute="leading" secondItem="OlX-e0-sJt" secondAttribute="trailing" constant="10" id="Rrj-ex-OzG"/>
+                            <constraint firstAttribute="bottom" secondItem="Mva-m7-1o2" secondAttribute="bottom" constant="9" id="Vkw-uw-ZAb"/>
+                            <constraint firstItem="Mva-m7-1o2" firstAttribute="top" secondItem="eQs-Tg-nDI" secondAttribute="top" constant="9" id="emZ-qf-mWh"/>
+                            <constraint firstAttribute="bottom" secondItem="iai-3E-pJU" secondAttribute="bottom" id="h9R-n2-Yvm"/>
+                            <constraint firstItem="iai-3E-pJU" firstAttribute="top" secondItem="eQs-Tg-nDI" secondAttribute="top" id="mrQ-4h-d46"/>
+                            <constraint firstItem="iai-3E-pJU" firstAttribute="centerX" secondItem="eQs-Tg-nDI" secondAttribute="centerX" id="n67-30-1wr"/>
+                            <constraint firstItem="iai-3E-pJU" firstAttribute="centerY" secondItem="eQs-Tg-nDI" secondAttribute="centerY" id="qcO-76-PlB"/>
+                            <constraint firstItem="iai-3E-pJU" firstAttribute="centerX" secondItem="eQs-Tg-nDI" secondAttribute="centerX" id="rAF-V7-i3o"/>
+                            <constraint firstItem="OlX-e0-sJt" firstAttribute="top" secondItem="eQs-Tg-nDI" secondAttribute="top" constant="9" id="uqQ-Ig-VP1"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="n67-30-1wr"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6d-Nv-VaD">
+                        <rect key="frame" x="75" y="40" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="8uk-60-a5Q"/>
+                            <constraint firstAttribute="width" constant="50" id="dFM-Xa-q9J"/>
+                        </constraints>
+                        <color key="tintColor" red="0.13063982129999999" green="0.64301215280000001" blue="0.55469226839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" image="stop"/>
+                        <connections>
+                            <action selector="recordOrPlayClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ys3-RT-1hf"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7E-qn-nUZ">
+                        <rect key="frame" x="269" y="10" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="6KD-5W-HhO"/>
+                            <constraint firstAttribute="height" constant="44" id="OIv-HG-DdZ"/>
+                        </constraints>
+                        <color key="tintColor" red="0.062745098040000002" green="0.6705882353" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" image="delete_icon"/>
+                    </button>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="low-YX-4b0">
+                        <rect key="frame" x="90" y="55" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="QmA-3U-sFs"/>
+                            <constraint firstAttribute="width" constant="20" id="YRO-pJ-JRo"/>
+                        </constraints>
+                        <color key="color" red="0.13725490200000001" green="0.63921568630000003" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </activityIndicatorView>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rre-n1-0tN">
+                        <rect key="frame" x="85" y="117" width="150" height="2"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </progressView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eQs-Tg-nDI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1mo-vL-zz4"/>
+                    <constraint firstItem="t6d-Nv-VaD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="EWa-Y7-vZe"/>
+                    <constraint firstItem="low-YX-4b0" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-60" id="GYf-XD-TwW"/>
+                    <constraint firstItem="low-YX-4b0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="HWi-al-gW2"/>
+                    <constraint firstAttribute="trailing" secondItem="j7E-qn-nUZ" secondAttribute="trailing" constant="7" id="JMD-xu-dGg"/>
+                    <constraint firstItem="eQs-Tg-nDI" firstAttribute="centerX" secondItem="low-YX-4b0" secondAttribute="centerX" constant="60" id="P2u-4b-ZVZ"/>
+                    <constraint firstItem="eQs-Tg-nDI" firstAttribute="centerY" secondItem="t6d-Nv-VaD" secondAttribute="centerY" id="T8W-Jd-IOr"/>
+                    <constraint firstItem="t6d-Nv-VaD" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-60" id="bNR-jl-1kR"/>
+                    <constraint firstItem="j7E-qn-nUZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="c4E-Ks-AOy"/>
+                    <constraint firstItem="eQs-Tg-nDI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="9" id="lQR-y8-HLY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="progressBar" destination="rre-n1-0tN" id="94a-e7-yRK"/>
+                <outlet property="recordButton" destination="t6d-Nv-VaD" id="t7X-9P-F33"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="delete_icon" width="34" height="34"/>
+        <image name="new_prescription_icon" width="130" height="100"/>
+        <image name="new_prescription_icon_withoutPlus" width="128" height="97"/>
+        <image name="stop" width="44" height="44"/>
+    </resources>
+</document>

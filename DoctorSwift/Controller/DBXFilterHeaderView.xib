@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="DBXFilterHeaderView" id="iN0-l3-epB" customClass="DBXFilterHeaderView" customModule="DoctorSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejM-4t-aQ3">
+                    <rect key="frame" x="16" y="8" width="343" height="30"/>
+                    <state key="normal" title=" User name">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="dropDown:" destination="iN0-l3-epB" eventType="touchUpInside" id="zOA-vj-upz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.13063982129999999" green="0.64301215280000001" blue="0.55469226839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ejM-4t-aQ3" secondAttribute="bottom" constant="8" id="965-Fw-Xpy"/>
+                <constraint firstItem="ejM-4t-aQ3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="R31-Vu-4ub"/>
+                <constraint firstItem="ejM-4t-aQ3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="vMK-g1-Tjw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ejM-4t-aQ3" secondAttribute="trailing" constant="16" id="vbz-mR-OC3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="dropDownButton" destination="ejM-4t-aQ3" id="4fP-f6-mKL"/>
+            </connections>
+            <point key="canvasLocation" x="-15.5" y="-729"/>
+        </view>
+    </objects>
+</document>

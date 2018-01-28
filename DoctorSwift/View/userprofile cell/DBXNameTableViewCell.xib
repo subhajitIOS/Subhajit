@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DBXNameTableViewCell" customModule="DoctorSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_img_holder" translatesAutoresizingMaskIntoConstraints="NO" id="jKZ-Vh-HrJ">
+                        <rect key="frame" x="19" y="8" width="88" height="88"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="88" id="h8F-SI-HGv"/>
+                            <constraint firstAttribute="height" constant="88" id="wCt-Lq-7XN"/>
+                        </constraints>
+                    </imageView>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Fast Name*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SyT-3H-YEr">
+                        <rect key="frame" x="116" y="8" width="186" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="FbF-3E-3be"/>
+                            <constraint firstAttribute="width" constant="186" id="Gmf-ip-kTg"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1va-gq-Fey">
+                        <rect key="frame" x="116" y="57" width="186" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="XHn-85-wq1"/>
+                            <constraint firstAttribute="width" constant="186" id="Xmf-5z-3p1"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VPP-XF-Y7w" userLabel="FirstBorderView">
+                        <rect key="frame" x="116" y="48" width="196" height="1"/>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="196" id="1FQ-0z-t56"/>
+                            <constraint firstAttribute="height" constant="1" id="bld-6s-EpS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Z9f-Bu-Su3"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cv8-yI-xIC" userLabel="SecodView">
+                        <rect key="frame" x="116" y="97" width="196" height="1"/>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="XXZ-Nh-ZPN"/>
+                            <constraint firstAttribute="width" constant="196" id="cBv-jX-lMF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xEB-op-4kh"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="VPP-XF-Y7w" secondAttribute="trailing" constant="8" id="57b-fb-glO"/>
+                    <constraint firstItem="VPP-XF-Y7w" firstAttribute="leading" secondItem="jKZ-Vh-HrJ" secondAttribute="trailing" constant="9" id="8PG-DN-nYc"/>
+                    <constraint firstItem="jKZ-Vh-HrJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="19" id="9m4-PA-YNp"/>
+                    <constraint firstAttribute="trailing" secondItem="Cv8-yI-xIC" secondAttribute="trailing" constant="8" id="9ur-Ec-vPx"/>
+                    <constraint firstItem="1va-gq-Fey" firstAttribute="leading" secondItem="jKZ-Vh-HrJ" secondAttribute="trailing" constant="9" id="Btd-mc-2Yn"/>
+                    <constraint firstItem="1va-gq-Fey" firstAttribute="top" secondItem="VPP-XF-Y7w" secondAttribute="bottom" constant="8" id="Ic5-4s-0ZT"/>
+                    <constraint firstItem="jKZ-Vh-HrJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="J9Z-sw-p6u"/>
+                    <constraint firstAttribute="trailing" secondItem="SyT-3H-YEr" secondAttribute="trailing" constant="18" id="N8R-4k-bBs"/>
+                    <constraint firstItem="SyT-3H-YEr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="PvA-NW-a43"/>
+                    <constraint firstItem="VPP-XF-Y7w" firstAttribute="top" secondItem="SyT-3H-YEr" secondAttribute="bottom" id="SJW-bI-IHE"/>
+                    <constraint firstItem="Cv8-yI-xIC" firstAttribute="top" secondItem="1va-gq-Fey" secondAttribute="bottom" id="SXe-er-f71"/>
+                    <constraint firstItem="Cv8-yI-xIC" firstAttribute="leading" secondItem="jKZ-Vh-HrJ" secondAttribute="trailing" constant="9" id="TCQ-FP-Dva"/>
+                    <constraint firstItem="SyT-3H-YEr" firstAttribute="leading" secondItem="jKZ-Vh-HrJ" secondAttribute="trailing" constant="9" id="jcs-4h-rMG"/>
+                    <constraint firstAttribute="trailing" secondItem="1va-gq-Fey" secondAttribute="trailing" constant="18" id="jqc-9v-jxp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="firstNametxt" destination="SyT-3H-YEr" id="2kI-pF-O2r"/>
+                <outlet property="lastNametxt" destination="1va-gq-Fey" id="dNP-ud-GXT"/>
+                <outlet property="profileImageView" destination="jKZ-Vh-HrJ" id="Q3C-SD-Qpc"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profile_img_holder" width="88" height="88"/>
+    </resources>
+</document>

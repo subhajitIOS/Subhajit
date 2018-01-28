@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DBXDualPhoneNumberTableViewCell" id="KGk-i7-Jjw" customClass="DBXDualPhoneNumberTableViewCell" customModule="DoctorSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JuL-i9-Ol9">
+                        <rect key="frame" x="15" y="9" width="58" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" id="2ys-Gf-69C"/>
+                            <constraint firstAttribute="width" secondItem="JuL-i9-Ol9" secondAttribute="height" multiplier="22:9" constant="-30" id="7XX-Gt-2i0"/>
+                            <constraint firstAttribute="height" constant="36" id="bxV-MP-3Rt"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nVB-Wp-Mox">
+                        <rect key="frame" x="0.0" y="45" width="60" height="1"/>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" id="0dB-1P-fC5"/>
+                            <constraint firstAttribute="height" constant="1" id="K9c-TX-vqr"/>
+                            <constraint firstAttribute="width" secondItem="nVB-Wp-Mox" secondAttribute="height" multiplier="103:1" constant="-43" id="Otb-dL-uxy"/>
+                        </constraints>
+                    </view>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LJ5-Ra-ITY">
+                        <rect key="frame" x="81" y="9" width="223" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" id="0WC-6F-mpl"/>
+                            <constraint firstAttribute="width" secondItem="LJ5-Ra-ITY" secondAttribute="height" multiplier="193:36" constant="30" id="0c7-3R-uvN"/>
+                            <constraint firstAttribute="height" constant="36" id="2x5-xG-cec"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YVE-xx-YWy">
+                        <rect key="frame" x="81" y="45" width="239" height="1"/>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Ilj-Mz-am8"/>
+                            <constraint firstAttribute="width" secondItem="YVE-xx-YWy" secondAttribute="height" multiplier="209:1" constant="30" id="Omo-08-uKQ"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" id="jMz-7K-tUf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nVB-Wp-Mox" firstAttribute="top" secondItem="JuL-i9-Ol9" secondAttribute="bottom" id="7ry-WT-JSL"/>
+                    <constraint firstItem="JuL-i9-Ol9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="LRd-cg-PAU"/>
+                    <constraint firstItem="YVE-xx-YWy" firstAttribute="top" secondItem="LJ5-Ra-ITY" secondAttribute="bottom" id="N24-6U-dAz"/>
+                    <constraint firstItem="LJ5-Ra-ITY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="WZ2-xt-q9h"/>
+                    <constraint firstItem="nVB-Wp-Mox" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ajn-Zp-dYq"/>
+                    <constraint firstAttribute="trailing" secondItem="LJ5-Ra-ITY" secondAttribute="trailing" constant="16" id="sJX-sN-Lc9"/>
+                    <constraint firstItem="JuL-i9-Ol9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="xgM-Y5-2h5"/>
+                    <constraint firstAttribute="trailing" secondItem="YVE-xx-YWy" secondAttribute="trailing" id="zT1-KA-7m5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="codetxt" destination="JuL-i9-Ol9" id="EFw-mo-9QE"/>
+                <outlet property="phonetxt" destination="LJ5-Ra-ITY" id="x9a-U4-HbX"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
