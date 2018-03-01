@@ -47,6 +47,8 @@
 		181A3E8320170038004DA440 /* TagCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181A3E7E20170038004DA440 /* TagCollectionCell.swift */; };
 		181A3E8620170661004DA440 /* DBXTagTokenzierCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181A3E8420170661004DA440 /* DBXTagTokenzierCell.swift */; };
 		181A3E8720170661004DA440 /* DBXTagTokenzierCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181A3E8520170661004DA440 /* DBXTagTokenzierCell.xib */; };
+		182B52BA202074C100DC91DC /* DBXPatientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B52B8202074C100DC91DC /* DBXPatientCell.swift */; };
+		182B52BD202074E700DC91DC /* DBXPatientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182B52BC202074E700DC91DC /* DBXPatientCell.xib */; };
 		1837653D2019AD1F00A1C805 /* detaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837653B2019AD1F00A1C805 /* detaCollectionViewCell.swift */; };
 		1837653E2019AD1F00A1C805 /* detaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1837653C2019AD1F00A1C805 /* detaCollectionViewCell.xib */; };
 		183EF71C201359DA00576BCF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183EF71B201359DA00576BCF /* Security.framework */; };
@@ -63,6 +65,8 @@
 		187C5AEC2015FF6500396272 /* DBXProfileAdditionalInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187C5AEA2015FF6500396272 /* DBXProfileAdditionalInfoCell.xib */; };
 		187C5AEF2016031E00396272 /* DBXContactNoTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187C5AED2016031E00396272 /* DBXContactNoTypeCell.swift */; };
 		187C5AF22016032C00396272 /* DBXContactNoTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187C5AF12016032C00396272 /* DBXContactNoTypeCell.xib */; };
+		18903616204871A1004D360A /* PrescriptionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18903615204871A1004D360A /* PrescriptionDetailViewController.swift */; };
+		189036182048793A004D360A /* ReminderDrugs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189036172048793A004D360A /* ReminderDrugs.swift */; };
 		1890F13A2010BFB40066733B /* interactionsFilterViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1890F1382010BFB40066733B /* interactionsFilterViewViewController.swift */; };
 		1890F13B2010BFB40066733B /* interactionsFilterViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1890F1392010BFB40066733B /* interactionsFilterViewViewController.xib */; };
 		1890F13D2010CE810066733B /* DBXFilterHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1890F13C2010CE810066733B /* DBXFilterHeaderView.xib */; };
@@ -74,6 +78,7 @@
 		18C7338320171A4C00E911BD /* TagCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C7338220171A4C00E911BD /* TagCollectionCell.xib */; };
 		18C8D611201070F30009DF06 /* DocumentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8D60F201070F30009DF06 /* DocumentResponse.swift */; };
 		18C8D612201070F30009DF06 /* DiseaseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8D610201070F30009DF06 /* DiseaseList.swift */; };
+		18CEBEF8201F2C2E00807E11 /* PrescriptionDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CEBEF7201F2C2E00807E11 /* PrescriptionDetailCell.swift */; };
 		18D762342011D250003004E9 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D762332011D250003004E9 /* List.swift */; };
 		18D762362011E83A003004E9 /* DBXFilterHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D762352011E83A003004E9 /* DBXFilterHeaderView.swift */; };
 		18D7623920120B92003004E9 /* PrescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D7623720120B92003004E9 /* PrescriptionTableViewCell.swift */; };
@@ -125,6 +130,8 @@
 		181A3E7E20170038004DA440 /* TagCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagCollectionCell.swift; sourceTree = "<group>"; };
 		181A3E8420170661004DA440 /* DBXTagTokenzierCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBXTagTokenzierCell.swift; sourceTree = "<group>"; };
 		181A3E8520170661004DA440 /* DBXTagTokenzierCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DBXTagTokenzierCell.xib; sourceTree = "<group>"; };
+		182B52B8202074C100DC91DC /* DBXPatientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBXPatientCell.swift; sourceTree = "<group>"; };
+		182B52BC202074E700DC91DC /* DBXPatientCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DBXPatientCell.xib; sourceTree = "<group>"; };
 		1837653B2019AD1F00A1C805 /* detaCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detaCollectionViewCell.swift; sourceTree = "<group>"; };
 		1837653C2019AD1F00A1C805 /* detaCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = detaCollectionViewCell.xib; sourceTree = "<group>"; };
 		183EF71B201359DA00576BCF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -141,6 +148,8 @@
 		187C5AEA2015FF6500396272 /* DBXProfileAdditionalInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DBXProfileAdditionalInfoCell.xib; sourceTree = "<group>"; };
 		187C5AED2016031E00396272 /* DBXContactNoTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBXContactNoTypeCell.swift; sourceTree = "<group>"; };
 		187C5AF12016032C00396272 /* DBXContactNoTypeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DBXContactNoTypeCell.xib; sourceTree = "<group>"; };
+		18903615204871A1004D360A /* PrescriptionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrescriptionDetailViewController.swift; sourceTree = "<group>"; };
+		189036172048793A004D360A /* ReminderDrugs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderDrugs.swift; sourceTree = "<group>"; };
 		1890F1382010BFB40066733B /* interactionsFilterViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = interactionsFilterViewViewController.swift; sourceTree = "<group>"; };
 		1890F1392010BFB40066733B /* interactionsFilterViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = interactionsFilterViewViewController.xib; sourceTree = "<group>"; };
 		1890F13C2010CE810066733B /* DBXFilterHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DBXFilterHeaderView.xib; sourceTree = "<group>"; };
@@ -152,6 +161,7 @@
 		18C7338220171A4C00E911BD /* TagCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagCollectionCell.xib; sourceTree = "<group>"; };
 		18C8D60F201070F30009DF06 /* DocumentResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentResponse.swift; sourceTree = "<group>"; };
 		18C8D610201070F30009DF06 /* DiseaseList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiseaseList.swift; sourceTree = "<group>"; };
+		18CEBEF7201F2C2E00807E11 /* PrescriptionDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrescriptionDetailCell.swift; sourceTree = "<group>"; };
 		18D762332011D250003004E9 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		18D762352011E83A003004E9 /* DBXFilterHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBXFilterHeaderView.swift; sourceTree = "<group>"; };
 		18D7623720120B92003004E9 /* PrescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrescriptionTableViewCell.swift; sourceTree = "<group>"; };
@@ -193,15 +203,19 @@
 		18184066200B2D0F00889B2D /* DoctorSwift */ = {
 			isa = PBXGroup;
 			children = (
+				182B52BC202074E700DC91DC /* DBXPatientCell.xib */,
+				182B52B8202074C100DC91DC /* DBXPatientCell.swift */,
 				1890F1372010BF6B0066733B /* Controller */,
 				18184090200B39EB00889B2D /* View */,
 				18184088200B375000889B2D /* Model */,
 				18184079200B309C00889B2D /* Service */,
 				18184067200B2D0F00889B2D /* AppDelegate.swift */,
+				18903615204871A1004D360A /* PrescriptionDetailViewController.swift */,
 				18560D48201C498000F0928D /* RecordViewController.swift */,
 				187C5ACE2015BA0B00396272 /* UserProfileViewController.swift */,
 				1819D0E920185977006D8AFB /* ProfileViewController.swift */,
 				18184069200B2D0F00889B2D /* HomeViewController.swift */,
+				189036172048793A004D360A /* ReminderDrugs.swift */,
 				18B6CF4E200F62C100F253B3 /* DetailViewController.swift */,
 				1818406B200B2D0F00889B2D /* Main.storyboard */,
 				1818406E200B2D0F00889B2D /* Assets.xcassets */,
@@ -248,6 +262,7 @@
 		18184090200B39EB00889B2D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18CEBEF6201F2C1200807E11 /* detail cell */,
 				18560D4A201C7E3100F0928D /* view intetaction cell */,
 				1819D0F720186936006D8AFB /* Doctorprofile cell */,
 				1819D0E820185940006D8AFB /* profile */,
@@ -390,6 +405,14 @@
 			path = "Document Response";
 			sourceTree = "<group>";
 		};
+		18CEBEF6201F2C1200807E11 /* detail cell */ = {
+			isa = PBXGroup;
+			children = (
+				18CEBEF7201F2C2E00807E11 /* PrescriptionDetailCell.swift */,
+			);
+			path = "detail cell";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -459,6 +482,7 @@
 				18D7623A20120B92003004E9 /* PrescriptionTableViewCell.xib in Resources */,
 				1819D10F2018B623006D8AFB /* DBXDualPhoneNumberTableViewCell.xib in Resources */,
 				187C5ADE2015ECF400396272 /* DBXNameTableViewCell.xib in Resources */,
+				182B52BD202074E700DC91DC /* DBXPatientCell.xib in Resources */,
 				1818406F200B2D0F00889B2D /* Assets.xcassets in Resources */,
 				1818406D200B2D0F00889B2D /* Main.storyboard in Resources */,
 				1890F13B2010BFB40066733B /* interactionsFilterViewViewController.xib in Resources */,
@@ -497,6 +521,7 @@
 				18184083200B322000889B2D /* Constant.swift in Sources */,
 				1819D10320186C25006D8AFB /* DBXProfileHeaderView.swift in Sources */,
 				1819D0F2201864C3006D8AFB /* ClinicInfos.swift in Sources */,
+				18903616204871A1004D360A /* PrescriptionDetailViewController.swift in Sources */,
 				18184087200B334A00889B2D /* ActivityLoaderView.swift in Sources */,
 				1818406A200B2D0F00889B2D /* HomeViewController.swift in Sources */,
 				1819D0F3201864C3006D8AFB /* DoctorInfos.swift in Sources */,
@@ -510,6 +535,7 @@
 				1818408D200B376800889B2D /* Json4Swift_Base.swift in Sources */,
 				18184080200B30E300889B2D /* DoctorService.swift in Sources */,
 				181A3E8320170038004DA440 /* TagCollectionCell.swift in Sources */,
+				182B52BA202074C100DC91DC /* DBXPatientCell.swift in Sources */,
 				1819D0FE20186A7D006D8AFB /* DBXProfileImagesTableViewCell.swift in Sources */,
 				18184068200B2D0F00889B2D /* AppDelegate.swift in Sources */,
 				18B6CF4C200F5F5600F253B3 /* DetailCollectionViewCell.swift in Sources */,
@@ -517,9 +543,11 @@
 				1819D0FA20186963006D8AFB /* DBXAddressTableViewCell.swift in Sources */,
 				1818408E200B376800889B2D /* Response.swift in Sources */,
 				1819D0F5201864C3006D8AFB /* ClinicImages.swift in Sources */,
+				18CEBEF8201F2C2E00807E11 /* PrescriptionDetailCell.swift in Sources */,
 				18C61958200F9F9B00AFA308 /* Enum.swift in Sources */,
 				187C5AE12015F1EF00396272 /* DBXDoubleDropDownTypeCell.swift in Sources */,
 				18184081200B30E300889B2D /* DoctorHandler.swift in Sources */,
+				189036182048793A004D360A /* ReminderDrugs.swift in Sources */,
 				181A3E8120170038004DA440 /* Theme.swift in Sources */,
 				1818407F200B30E300889B2D /* DoctorRequestModel.swift in Sources */,
 				1819D10E2018B623006D8AFB /* DBXDualPhoneNumberTableViewCell.swift in Sources */,
@@ -603,7 +631,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -654,7 +682,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -669,9 +697,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2DEF58NF8;
 				INFOPLIST_FILE = DoctorSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.subhajit.DoctorSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bhattad.dawaibox-doctor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -685,9 +713,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2DEF58NF8;
 				INFOPLIST_FILE = DoctorSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.subhajit.DoctorSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bhattad.dawaibox-doctor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

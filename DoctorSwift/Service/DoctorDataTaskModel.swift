@@ -22,6 +22,9 @@ import Foundation
     @objc optional func didRecieveResponseOfUserRegistration(json: NSMutableDictionary)
     @objc optional func didRecieveErrorOfUserRegistration(error: NSMutableDictionary)
     
+    @objc optional func didRecieveResponseOfDrugList(json: NSMutableDictionary)
+    @objc optional func didRecieveErrorOfDruglist(error: NSMutableDictionary)
+    
     
     // User information delegate
     
@@ -202,6 +205,41 @@ class DoctorDataTaskModel {
             if(self.delegate?.didRecieveErrorOfDoctorInfo != nil){
                 
                 self.delegate?.didRecieveErrorOfDoctorInfo!(error: error as! NSMutableDictionary)
+                
+            }
+            
+            
+        })
+        
+        requestApi = nil
+        
+        
+    }
+    
+    //MARK: Get user profile
+    
+    func getdrugList(parameter: NSMutableDictionary) {
+        
+        var requestApi: String?
+       
+            
+            requestApi = RequestAPI.SEARCHDrugs.rawValue
+            
+        
+        
+        DoctorHandler.sharedInstance.requestServer(requestType: RequestType.GET.rawValue , requestAPI: requestApi! , parameter: parameter, success: { json  in
+           
+            if(self.delegate?.didRecieveResponseOfDrugList != nil){
+               
+                self.delegate?.didRecieveResponseOfDrugList!(json: json)
+            }
+            
+            
+        }, failure: {  error in
+            
+            if(self.delegate?.didRecieveErrorOfDruglist != nil){
+                
+                self.delegate?.didRecieveErrorOfDruglist!(error: error as! NSMutableDictionary)
                 
             }
             

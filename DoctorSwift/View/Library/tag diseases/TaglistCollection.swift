@@ -223,6 +223,7 @@ protocol TagViewDelegate: class {
     }
     
     
+    @available(iOS 10.0, *)
     func setupTagCollection() {
         
         // 1 - mask constrain true

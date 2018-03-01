@@ -29,7 +29,7 @@ class DBXTagTokenzierCell: UITableViewCell {
         
         self.tagView.backgroundColor = UIColor.clear
          self.tagView.tagBorderColor = UIColor.gray
-         self.tagView.isDeleteEnabled = true
+         self.tagView.isDeleteEnabled = false
         self.tagView.closeIconTint = UIColor.gray
          self.tagView.allowSingleSelection = true
          self.tagView.allowMultipleSelection = true

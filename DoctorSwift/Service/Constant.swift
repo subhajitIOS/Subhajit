@@ -66,14 +66,17 @@ let DISTANCE = "distance"
 let USER_ID = "userId"
 let ROLE = "role"
 let USER_LAYERID = "userLayerId"
-
-
-
 let ID = "id"
+let SEARCHTEXt = "SearchText"
+let START = "start"
+let LIMIT = "limit"
 let EMAIL = "email"
 let GENDER = "gender"
 let PICTURE = "picture"
 let IMAGE_URL = "url"
+
+
+
 let IMAGE_NAME = "imageName"
 let FACEBOOK_ID = "facebookId"
 let USER_NAME = "userName"
@@ -272,7 +275,7 @@ enum RequestAPI : String
     case COWBOY_NEAR_BY_USER = "nearbyusers?"
     case GET_OTHER_USER_INFO = "viewprofile?"
     case GET_OTHER_he = "getHealthReads?"
-    
+     case SEARCHDrugs = "DawaiBoxSmartPrescription/searchdrugs?"
    
     case USER_ACTION = "usersaction?"
     case CONVERSATION_LIST = "conversationlist?"

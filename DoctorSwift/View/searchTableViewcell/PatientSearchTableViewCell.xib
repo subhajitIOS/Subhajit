@@ -9,28 +9,81 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="104" id="KGk-i7-Jjw" customClass="PatientSearchTableViewCell" customModule="DoctorSwift" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="103.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wx9-bM-da2">
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wx9-bM-da2">
                         <rect key="frame" x="9" y="0.0" width="303" height="104"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ar3-nK-Dce">
-                                <rect key="frame" x="8" y="27" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Uo-cA-Ey3">
+                                <rect key="frame" x="-5" y="0.0" width="313" height="104"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QkH-tc-5Zw">
+                                <rect key="frame" x="7" y="11" width="54" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="dBl-NT-9sK"/>
+                                    <constraint firstAttribute="height" constant="54" id="tOe-og-wfQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ar3-nK-Dce">
+                                <rect key="frame" x="69" y="27" width="133" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1400" id="6qw-US-igY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UAg-Bc-xpa">
+                                <rect key="frame" x="215" y="0.0" width="88" height="104"/>
+                                <color key="backgroundColor" red="0.66666666669999997" green="0.83973524310000003" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="XgY-ig-gSi"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ugf-KN-Q6h">
+                                <rect key="frame" x="112" y="37" width="79" height="30"/>
+                                <state key="normal" title="Precibe">
+                                    <color key="titleColor" red="0.13063982129999999" green="0.64301215280000001" blue="0.55469226839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMq-hP-UiM">
+                                <rect key="frame" x="112" y="37" width="79" height="30"/>
+                                <state key="normal" title="Add/View">
+                                    <color key="titleColor" red="0.13063982129999999" green="0.64301215280000001" blue="0.55469226839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ar3-nK-Dce" firstAttribute="leading" secondItem="QkH-tc-5Zw" secondAttribute="trailing" constant="8" id="0nY-lv-Whq"/>
+                            <constraint firstItem="QkH-tc-5Zw" firstAttribute="top" secondItem="Wx9-bM-da2" secondAttribute="top" constant="11" id="3lq-eq-UtD"/>
+                            <constraint firstAttribute="bottom" secondItem="UAg-Bc-xpa" secondAttribute="bottom" id="4vc-Da-QHd"/>
+                            <constraint firstItem="2Uo-cA-Ey3" firstAttribute="top" secondItem="Wx9-bM-da2" secondAttribute="top" id="5hL-SX-6Kx"/>
+                            <constraint firstItem="UAg-Bc-xpa" firstAttribute="top" secondItem="Wx9-bM-da2" secondAttribute="top" id="8JA-jA-zKx"/>
+                            <constraint firstAttribute="bottom" secondItem="2Uo-cA-Ey3" secondAttribute="bottom" id="A9Y-JU-xFN"/>
+                            <constraint firstItem="UAg-Bc-xpa" firstAttribute="centerY" secondItem="wMq-hP-UiM" secondAttribute="centerY" id="Aa8-ze-cn2"/>
+                            <constraint firstItem="ar3-nK-Dce" firstAttribute="top" secondItem="Wx9-bM-da2" secondAttribute="top" constant="27" id="NzF-YN-9Cz"/>
+                            <constraint firstItem="2Uo-cA-Ey3" firstAttribute="leading" secondItem="Wx9-bM-da2" secondAttribute="leading" constant="-5" id="Pqk-9v-Kgp"/>
+                            <constraint firstAttribute="trailing" secondItem="2Uo-cA-Ey3" secondAttribute="trailing" constant="-5" id="SGp-u4-Ull"/>
+                            <constraint firstItem="QkH-tc-5Zw" firstAttribute="leading" secondItem="Wx9-bM-da2" secondAttribute="leading" constant="7" id="eM2-0T-Fkt"/>
+                            <constraint firstItem="UAg-Bc-xpa" firstAttribute="leading" secondItem="ar3-nK-Dce" secondAttribute="trailing" constant="96.5" id="hQ3-au-BpG"/>
+                            <constraint firstItem="UAg-Bc-xpa" firstAttribute="centerY" secondItem="Ugf-KN-Q6h" secondAttribute="centerY" id="lmT-qZ-GuG"/>
+                            <constraint firstAttribute="trailing" secondItem="UAg-Bc-xpa" secondAttribute="trailing" id="n1s-9L-9Xa"/>
+                        </constraints>
                     </view>
                 </subviews>
                 <constraints>

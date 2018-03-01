@@ -74,7 +74,7 @@ fetchHealthRecordsList()
         countArrayForDiagnostic = (diagnosticlist?.count)!
         DoctorSingleton.sharedInstance.activityLoader.hideActivityIndicator()
         
-        tableList.reloadData()
+       // tableList.reloadData()
         
         
         
@@ -139,7 +139,7 @@ fetchHealthRecordsList()
             countArrayForDiagnostic = (diagnosticlist?.count)!
             countArrayForDoctor = 0
         }
-    tableList.reloadData()
+         tableList.reloadData()
     }
 
 }

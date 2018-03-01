@@ -73,7 +73,7 @@ class DetailViewController: UIViewController,UICollectionViewDelegate,UICollecti
         
         
         
-        tblList.estimatedRowHeight = 44
+        tblList.estimatedRowHeight = 100
         tblList.rowHeight = UITableViewAutomaticDimension
        
         headerCollectionView.delegate=self
@@ -98,6 +98,11 @@ class DetailViewController: UIViewController,UICollectionViewDelegate,UICollecti
         print("add pressed")
     }
     @objc func searchTapped (sender:UIButton) {
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "PrescriptionDetailViewController") as! PrescriptionDetailViewController
+        let navigationController = UINavigationController(rootViewController: vc)
+        self.present(navigationController, animated: true, completion: nil)
+        
         print("add pressed")
     }
    
@@ -154,7 +159,7 @@ func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPat
     moreRecords = 1
     cowboyUsersArray = NSMutableArray()
     start = 0
-    limit = 5
+    limit = 20
     fetchHealthRecordsList(str: DBXPatientHeaderType(rawValue: headerType)!)
     headerCollectionView.reloadData()
     // handle tap events
@@ -338,7 +343,7 @@ print(myCGFloat)
 //
         
        
-            self.tblList.reloadData()
+            //self.tblList.reloadData()
         
 //
 //
@@ -390,6 +395,13 @@ extension DetailViewController: UITableViewDataSource,UITableViewDelegate{
         
         return rowCount
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return UITableViewAutomaticDimension
+    }
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch headerType {
@@ -400,7 +412,7 @@ extension DetailViewController: UITableViewDataSource,UITableViewDelegate{
             
             
         print(headerType)
-            let cell = tableView.dequeueReusableCell(withIdentifier: "PatientSearchTableViewCell", for: indexPath) as! PatientSearchTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "PrescriptionTableViewCell", for: indexPath) as! PrescriptionTableViewCell
             
             
             //        let rect = CGRect(origin: .zero, size: CGSize(width: cell.frame.width, height: 100))
@@ -450,6 +462,18 @@ extension DetailViewController: UITableViewDataSource,UITableViewDelegate{
             
             
             let listInfo = documentResponse![indexPath.row]
+            
+        
+            if listInfo.doctorName?.count != 0{
+                let secondText = listInfo.doctorName! + "," + listInfo.doctorSpeciality!
+                cell.dateAndTypelbl.text = secondText
+                
+                
+            }
+            
+            
+            
+          
             //        print(listInfo)
            // cell.Namelbl.text = listInfo.reportType
             //        cell.buttonTapped(name:[listInfo])
@@ -459,24 +483,35 @@ extension DetailViewController: UITableViewDataSource,UITableViewDelegate{
             
             let  str = dateFromMilliseconds(ms: listInfo.createdDate!)
             let dateFormatter = DateFormatter()
-            
+
             dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
             dateFormatter.dateFormat = "dd-MMM-yyyy"
             let resultString = dateFormatter.string(from: str as Date)
             
-            let myString: String? = listInfo.reportType
+            var myString: String? = listInfo.reportType
             
            
             
-            if (myString ?? "").isEmpty {
-              
-                
-            }
-            else{
+//            if (myString ?? "").isEmpty {
+//
+//
+//            }
+//            else{
                print("subhajit")
-                let secondText = resultString + ", " + listInfo.reportType!
-                cell.dateAndTypelbl.text = secondText
-            }
+            
+//            if let stra = listInfo.reportType, !stra.isEmpty {
+//                let secondText1 = listInfo.reportType! + ", " + "ssssssss"
+//                cell.centerNamelbl.text = secondText1
+//            }
+//            
+            
+//            if  !(listInfo.reportType?.isEmpty)! || listInfo.reportType?.count != 0 || listInfo.reportType != nil   {
+//
+//
+//
+//            }
+            
+            //}
             
             
             
@@ -484,16 +519,7 @@ extension DetailViewController: UITableViewDataSource,UITableViewDelegate{
            
             
 //             cell.dateAndTypelbl.text = "তৃণমূল ছাত্র পরিষদের নেতা তথা ছাত্র সংসদের সাধারণ সম্পাদক শাহিদ হাসান খান ছাত্র সংসদের মধ্যেই নিগ্রহ করছেন কলেজের এক ছাত্রীকে। সিসিটিভি ক্যামেরায় ধরাও পড়েছে এই দৃশ্য। নিগৃহীতার অভিযোগ এবং সংবাদমাধ্যমের চড়া আলোকপাত শেষ পর্যন্ত কঠিন করে তুলল পরিস্থিতি, গ্রেফতার হলেন অভিযুক্ত, জেল হেফাজতে গেলেন।"
-             let myStringset: String? = listInfo.doctorName
-            if (myStringset ?? "").isEmpty {
-                
-                
-            }
-            else{
-                print("subhajit")
-                let secondText = listInfo.doctorName! + ", " + listInfo.doctorSpeciality!
-                cell.centerNamelbl.text = secondText
-            }
+          
             
            
                  //  cell.student(response:listInfo)
@@ -528,20 +554,34 @@ extension DetailViewController: UITableViewDataSource,UITableViewDelegate{
             
         }
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "RecordViewController") as! RecordViewController
+        let navigationController = UINavigationController(rootViewController: vc)
+        self.present(navigationController, animated: true, completion: nil)
+    }
      func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
      
-        if (indexPath.row == (documentResponse?.count)! - 2) {
-             print("displaycell")
-             fetchHealthRecordsListset()
-        }
-  
+//        if (indexPath.row == (documentResponse?.count)! - 2) {
+//             print("displaycell")
+//            DispatchQueue.global(qos: .background).async {
+//                print("This is run on the background queue")
+//                 //self.fetchHealthRecordsListset()
+//                DispatchQueue.main.async {
+//                //self.tblList.reloadData()
+//                    print("This is run on the main queue, after the previous code in outer block")
+//                }
+//            }
+//
+//
+//        }
+//
         
         
     }
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView){
         
         print("scroll down")
-          tblList.reloadData()
+        
     }
     func scrollToBottom(){
         DispatchQueue.main.async {
@@ -555,3 +595,4 @@ extension DetailViewController: UITableViewDataSource,UITableViewDelegate{
 //    }
     
 }
+

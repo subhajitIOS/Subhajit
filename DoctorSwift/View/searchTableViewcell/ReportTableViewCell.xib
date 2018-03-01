@@ -25,34 +25,26 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iO4-bk-hiO">
-                        <rect key="frame" x="16" y="11" width="190" height="20"/>
-                        <constraints>
-                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="d75-iV-951"/>
-                            <constraint firstAttribute="width" constant="190" id="h8T-sT-Egp"/>
-                        </constraints>
+                        <rect key="frame" x="16" y="6" width="190" height="20"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1e-p3-fS7">
                         <rect key="frame" x="16" y="29" width="225" height="20.5"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="225" id="ZLh-aY-GmV"/>
-                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="zGV-rz-3Jw"/>
-                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="iO4-bk-hiO" secondAttribute="trailing" constant="114" id="2xo-Mj-wmK"/>
-                    <constraint firstItem="iO4-bk-hiO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="30Y-EQ-YDk"/>
-                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="n1e-p3-fS7" secondAttribute="bottom" id="34C-Yh-da6"/>
-                    <constraint firstItem="n1e-p3-fS7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="5U1-Iq-3MX"/>
-                    <constraint firstAttribute="trailing" secondItem="n1e-p3-fS7" secondAttribute="trailing" constant="79" id="M1u-mQ-ypQ"/>
-                    <constraint firstItem="n1e-p3-fS7" firstAttribute="top" secondItem="iO4-bk-hiO" secondAttribute="bottom" constant="-2" id="Zhw-Ii-AoT"/>
-                    <constraint firstItem="iO4-bk-hiO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="lOn-Qy-Rlx"/>
+                    <constraint firstAttribute="trailing" secondItem="n1e-p3-fS7" secondAttribute="trailing" constant="79" id="Lzq-LN-vab"/>
+                    <constraint firstItem="n1e-p3-fS7" firstAttribute="top" secondItem="iO4-bk-hiO" secondAttribute="bottom" constant="3" id="MGa-ly-Shf"/>
+                    <constraint firstItem="iO4-bk-hiO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="NOT-QI-Wqz"/>
+                    <constraint firstAttribute="trailing" secondItem="iO4-bk-hiO" secondAttribute="trailing" constant="114" id="Rlp-2j-rog"/>
+                    <constraint firstAttribute="bottom" secondItem="n1e-p3-fS7" secondAttribute="bottom" id="iyv-6a-kDF"/>
+                    <constraint firstItem="iO4-bk-hiO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="wrB-4n-6LF"/>
+                    <constraint firstItem="n1e-p3-fS7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="zGP-vJ-OBv"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
